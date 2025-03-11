@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../computer-system-Lec1/">
       
       
-        <link rel="next" href="../discrete-mathematics-Ch2/">
+        <link rel="next" href="../computer-system-Lec3/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Ch1 - Huansir's Blog</title>
+        <title>Lec2 - Huansir's Blog</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-foundations-logic-and-proofs" class="md-skip">
+        <a href="#foundations-of-digital-logic" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ch1
+              Lec2
             
           </span>
         </div>
@@ -454,8 +454,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -476,18 +478,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../computer-system/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -505,7 +505,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             计算机系统 I
@@ -519,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-system/computer-system-Lec1/" class="md-nav__link">
+      <a href="../computer-system-Lec1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -538,10 +538,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../computer-system/computer-system-Lec2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lec2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -551,6 +572,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#binary-logic-and-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary logic and gates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-ic-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some IC Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Algebra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplification-of-logic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplification of Logic Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-gates-and-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Gates and Circuits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -563,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../computer-system/computer-system-Lec3/" class="md-nav__link">
+      <a href="../computer-system-Lec3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,8 +685,6 @@
                 
   
   
-    
-  
   
   
     
@@ -612,16 +705,18 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../discrete-mathematics/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -639,7 +734,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             离散数学理论基础
@@ -650,31 +745,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Ch1
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../discrete-mathematics/discrete-mathematics-Ch1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,128 +758,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#propositional-logic" class="md-nav__link">
-    <span class="md-ellipsis">
-      Propositional Logic 命题逻辑
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Propositional Logic 命题逻辑">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#propositions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Propositions 命题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connectives 逻辑连接词
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#applications-of-propositional-logic" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applications of Propositional Logic 命题逻辑的应用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Applications of Propositional Logic 命题逻辑的应用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#translating-english-sentences-into-logical-expressions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Translating English Sentences into logical expressions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#system-specifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Specifications
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#boolean-searched" class="md-nav__link">
-    <span class="md-ellipsis">
-      boolean searched
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logic-puzzles" class="md-nav__link">
-    <span class="md-ellipsis">
-      logic puzzles
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inreoduction-to-proofs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Inreoduction to Proofs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#proof-methods-and-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proof Methods and Strategy
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -818,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../discrete-mathematics-Ch2/" class="md-nav__link">
+      <a href="../../discrete-mathematics/discrete-mathematics-Ch2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,102 +980,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#propositional-logic" class="md-nav__link">
+  <a href="#binary-logic-and-gates" class="md-nav__link">
     <span class="md-ellipsis">
-      Propositional Logic 命题逻辑
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Propositional Logic 命题逻辑">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#propositions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Propositions 命题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connectives 逻辑连接词
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#applications-of-propositional-logic" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applications of Propositional Logic 命题逻辑的应用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Applications of Propositional Logic 命题逻辑的应用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#translating-english-sentences-into-logical-expressions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Translating English Sentences into logical expressions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#system-specifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Specifications
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#boolean-searched" class="md-nav__link">
-    <span class="md-ellipsis">
-      boolean searched
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logic-puzzles" class="md-nav__link">
-    <span class="md-ellipsis">
-      logic puzzles
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inreoduction-to-proofs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Inreoduction to Proofs
+      Binary logic and gates
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#proof-methods-and-strategy" class="md-nav__link">
+  <a href="#some-ic-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Proof Methods and Strategy
+      Some IC Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Algebra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplification-of-logic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplification of Logic Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-gates-and-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Gates and Circuits
     </span>
   </a>
   
@@ -1145,199 +1049,485 @@
 
 
 
-<h1 id="the-foundations-logic-and-proofs">The Foundations: Logic and Proofs<a class="headerlink" href="#the-foundations-logic-and-proofs" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>在本章中，我们将阐释构成正确数学论证的要素，并介绍构建这些论证的工具。我们将建立一系列不同的证明方法，这些方法将使我们能够验证多种类型的数学结论。在介绍多种证明方法后，我们将探讨构建数学证明的若干策略。此外，我们将提出猜想的概念，并阐述通过研究猜想推动数学发展的完整过程。 </p>
-<p>In this chapter, we will explain what makes up a correct mathematical argument and introduce tools to construct these arguments. We will develop an arsenal of different proof methods that will enable us to prove many different types of results. After introducing many different methods of proof, we will introduce several strategies for constructing proofs. We will introduce the notion of a conjecture and explain the process of developing mathematics by studying conjectures.</p>
-</blockquote>
-<h2 id="propositional-logic">Propositional Logic 命题逻辑<a class="headerlink" href="#propositional-logic" title="Permanent link">&para;</a></h2>
-<h3 id="propositions">Propositions 命题<a class="headerlink" href="#propositions" title="Permanent link">&para;</a></h3>
+<h1 id="foundations-of-digital-logic">Foundations of Digital Logic<a class="headerlink" href="#foundations-of-digital-logic" title="Permanent link">&para;</a></h1>
+<h2 id="binary-logic-and-gates">Binary logic and gates<a class="headerlink" href="#binary-logic-and-gates" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>proposition</strong> : a declarative sentence (either true or false).<ul>
-<li><strong>propositional variables</strong> (or <strong>sentential variables</strong>) : use letters to present propositions ( <span class="arithmatex">\(p\)</span> , <span class="arithmatex">\(q\)</span> , <span class="arithmatex">\(r\)</span> , <span class="arithmatex">\(s\)</span> ...). <span class="arithmatex">\(T\)</span> denote <strong>true</strong>. <span class="arithmatex">\(F\)</span> denote <strong>false</strong>.</li>
-<li><strong>atomic propositions</strong> : Propositions that cannot be expressed in terms of simpler propositions.   </li>
+<li><strong>logic gate</strong> : <strong>logic gates</strong> implement logic functions.</li>
+<li>
+<p><strong>boolean algebra</strong> : a useful mathematical system for specifying and transforming logic functions.</p>
+</li>
+<li>
+<p><strong>AND</strong> : is denoted by a dot ( <span class="arithmatex">\(X \cdot Y\)</span> )</p>
+</li>
+<li><strong>OR</strong> : is denoted by a plus ( <span class="arithmatex">\(X+Y\)</span> )</li>
+<li><strong>NOT</strong> : is denoted by an overbar ( <span class="arithmatex">\(\bar{X}\)</span> ), a single quote mark ( <span class="arithmatex">\(X'\)</span> ), or ( <span class="arithmatex">\(\sim X\)</span> )</li>
+<li><strong>perform logic functions</strong> : inversion ( <span class="arithmatex">\(NOT\)</span> ) , <span class="arithmatex">\(AND\)</span> , <span class="arithmatex">\(OR\)</span> , <span class="arithmatex">\(NAND\)</span> , <span class="arithmatex">\(NOR\)</span> , etc.</li>
+<li><strong>single-input</strong> : <span class="arithmatex">\(NOT\)</span> gate, <strong>buffer</strong></li>
+<li><strong>two-input</strong> : <span class="arithmatex">\(AND\)</span> , <span class="arithmatex">\(OR\)</span> , <span class="arithmatex">\(XOR\)</span> , <span class="arithmatex">\(NAND\)</span> , <span class="arithmatex">\(NOR\)</span> , <span class="arithmatex">\(NXOR\)</span></li>
+<li><strong>multiple-input</strong></li>
+</ul>
+<p><img alt="Logic-Gate" src="Logic-Gate.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><strong>buffer (缓冲器)</strong> 的逻辑功能是 <span class="arithmatex">\(F=X\)</span> ，实际可用作信号放大，速度匹配等功能。</li>
+<li>任何函数都可转化成 与非 或 或非（德摩根律），故 与非门 和 或非门 又称 <strong>universal gate 通用门</strong></li>
+<li>正逻辑是高电平对 <span class="arithmatex">\(T\)</span>， 低电平对 <span class="arithmatex">\(F\)</span>，负逻辑反之。</li>
+</ul>
+</div>
+<h2 id="some-ic-parameters">Some IC Parameters<a class="headerlink" href="#some-ic-parameters" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><span class="arithmatex">\(V_{cc}\)</span> : power supply voltage</p>
+<ul>
+<li>Common across a logic family (e.g., 5V for all HC parts)</li>
+<li><span class="arithmatex">\(V_{CC}\)</span> and <span class="arithmatex">\(GND\)</span> commonly called <code>power supply tails</code> (Sometimes <span class="arithmatex">\(V_{DD}\)</span> and <span class="arithmatex">\(V_{SS}\)</span> for <span class="arithmatex">\(CMOS\)</span> devices)</li>
+</ul>
+</li>
+<li>
+<p><strong>Logic level</strong> : range of voltages for 0 and 1</p>
+</li>
+<li>
+<p><strong>Noise</strong> : anything degrade the voltages</p>
+</li>
+<li>
+<p><strong>Delay Models</strong></p>
+<ul>
+<li>
+<p><strong>Propagation delay 传输延迟( <span class="arithmatex">\(T_{pd}\)</span> , <span class="arithmatex">\(T_{plh}\)</span> , <span class="arithmatex">\(T_{phl}\)</span> )</strong> : Outputs don't instantaneously reflect input changes. <strong>Propagation delay</strong> is a measure of this time</p>
+<ul>
+<li>Delay from H to L can be different than from L to H</li>
+</ul>
+<p><img alt="Propagation-Delay" src="Propagation-Delay.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="arithmatex">\(T_{pd}\)</span> 根据需求由 <span class="arithmatex">\(T_{plh}\)</span> , <span class="arithmatex">\(T_{phl}\)</span> 算出 (平均值，最大值 ...... )</p>
+</div>
+</li>
+<li>
+<p><strong>Inertial delay 缓冲延迟</strong> : input changes cause the output to changes twice in an interval less than the <strong>rejection time</strong>, then the first of the output changes doesn't occur.</p>
+<p><img alt="Delay-Example" src="Delay-Example.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Transition Time 跃迁时间 (Rise &amp; Fall)</strong> : Takes time for signal to reach its output voltage</p>
+<ul>
+<li>will be affected by capacitance, fan-out</li>
+<li>also known as slew rate</li>
+<li>typically measured from 10% / 90% of <span class="arithmatex">\(V_{OL}\)</span> / <span class="arithmatex">\(V_{OH}\)</span> swing</li>
+</ul>
+<p><img alt="Transition-Time" src="Transition-Time.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>跃迁时间同样有限制 </p>
+</div>
+</li>
+<li>
+<p><strong>Power Dissipation</strong> :</p>
+<ul>
+<li>
+<p><strong>Static (<code>quiescent</code>) power dissipation</strong> : </p>
+<div class="arithmatex">\[P_S = I_{DD} \times V_{CC}\]</div>
+<p><span class="arithmatex">\(I_{DD}\)</span> is the quiescent supply current (also called the leakage current)</p>
+</li>
+<li>
+<p><strong>Dynamic power dissipation</strong> :</p>
+<div class="arithmatex">\[P_D = (C_{PD} + C_L) \times V_{CC}^2 \times f\]</div>
+<p><span class="arithmatex">\(C_{PD}\)</span> = power dissipation capacitance (constant for logic family)</p>
+<p><span class="arithmatex">\(C_L\)</span> = capacitive load on output (driving other devices)</p>
+<p><span class="arithmatex">\(f\)</span> = transition frequency ( <span class="arithmatex">\(0.5\times \text{number of output transition}\)</span> )</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Fan-in &amp; Fan-out</strong> :</p>
+<ul>
+<li>
+<p><strong>Fan-in</strong> : the maximum number of input signals that feed the input equations of a logic cell.</p>
+</li>
+<li>
+<p><strong>Fan-out</strong> : the maximum number of output signals that are fed by the output equations of a logic cell.</p>
+<ul>
+<li>
+<p>Fan-out can be defined in terms of standard load ( <code>SL</code> )</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>1 standard load equals the load contributed by the input of 1 inverter.</p>
+</div>
+</li>
+<li>
+<p><strong>Transition time</strong> : the time required for the gate output to change from <span class="arithmatex">\(H\)</span> to <span class="arithmatex">\(L\)</span> ( <span class="arithmatex">\(t_{HL}\)</span> ), or from <span class="arithmatex">\(L\)</span> to <span class="arithmatex">\(H\)</span>, <span class="arithmatex">\(t_{LH}\)</span></p>
+</li>
+<li>
+<p>the <strong>maximum fan-out</strong> that can be driven by a gate is the number of standard loads the gate can drive without exceeding its specified <strong>maximum transition time</strong></p>
+</li>
+<li>
+<p>The fan-out loading of a gate's output affects the gate's propagation delay</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<ul>
+<li>
+<p>One equation for <span class="arithmatex">\(t_{pd}\)</span> for a <span class="arithmatex">\(NAND\)</span> gate with 4 input is :</p>
+<div class="arithmatex">\[t_{pd} = 0.07+0.021 \text{ SL ns}\]</div>
+</li>
+<li>
+<p><span class="arithmatex">\(\text{SL}\)</span> is the number of standard loads the gate is driving, i. e., its fan-out in standard loads</p>
+</li>
+<li>
+<p>For <span class="arithmatex">\(\text{SL = 4.5}\)</span>, <span class="arithmatex">\(t_{pd} = 0.1645 \text{ ns}\)</span></p>
+</li>
+</ul>
+</div>
+</li>
 </ul>
 </li>
 </ul>
-<h3 id="connectives">Connectives 逻辑连接词<a class="headerlink" href="#connectives" title="Permanent link">&para;</a></h3>
+</li>
+<li>
+<p><strong>Gate Cost</strong> : chip area, number and size of transistors, amount of wiring, gate input count (rough measure)</p>
+</li>
+</ul>
+<h2 id="boolean-algebra">Boolean Algebra<a class="headerlink" href="#boolean-algebra" title="Permanent link">&para;</a></h2>
+<p><img alt="Basic-Identities-of-Boolean-Algebra" src="Basic-Identities-of-Boolean-Algebra.png" /></p>
+<p><img alt="n-variables-theorems-of-Boolean-Algebra" src="n-variables-theorems-of-Boolean-Algebra.png" /></p>
+<ul>
+<li><strong>Boolean Operatoe Precedence</strong> :<ol>
+<li><strong>Parentheses</strong></li>
+<li><strong>NOT</strong></li>
+<li><strong>AND</strong></li>
+<li><strong>OR</strong></li>
+</ol>
+</li>
+<li><strong>Some properties of Identities &amp; the Algebra</strong> :<ul>
+<li>The <strong>dual 对偶</strong> of an algebraic expression is obtained by interchanging <span class="arithmatex">\(+\)</span> and <span class="arithmatex">\(\cdot\)</span> and interchanging 0's and 1's (can't change calculate order)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">dual example 1</label><label for="__tabbed_1_2">dual example 2</label><label for="__tabbed_1_3">dual example 3</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="arithmatex">\[F = (A+\bar{C})\cdot B + 0\]</div>
+<details class="example">
+<summary>Solution</summary>
+<div class="arithmatex">\[\text{dual } F = (A\cdot \bar{C} + B) \cdot 1 = A \cdot \bar{C} + B\]</div>
+</details>
+</div>
+<div class="tabbed-block">
+<div class="arithmatex">\[G = (X+Y) \cdot (\overline{W\cdot Z})\]</div>
+<details class="example">
+<summary>Solution</summary>
+<div class="arithmatex">\[\text{dual }G = X\cdot Y+(\overline{W+Z})\]</div>
+</details>
+</div>
+<div class="tabbed-block">
+<div class="arithmatex">\[H = A\cdot B + A\cdot C + B\cdot C\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="arithmatex">\(H\)</span> 实现了一个三人的投票器</p>
+</div>
+<details class="example">
+<summary>Solution</summary>
+<div class="arithmatex">\[\text{dual }H = (A+B)\cdot(A+C)\cdot(B+C)\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="arithmatex">\(H = \text{dual } H\)</span> ， 故其也称为自对偶 </p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>若 <span class="arithmatex">\(A = B\)</span> ， 则 <span class="arithmatex">\(\text{dual }A = \text{dual }B\)</span> </p>
+</div>
+<h2 id="logic-functions">Logic functions<a class="headerlink" href="#logic-functions" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Many mathematical statements are constructed by combining one or more propositions. New propositions, called <strong>compound propositions</strong>, are formed from existing propositions using <strong>logical operators</strong> (also called <strong>connectives</strong>).</p>
+<p>逻辑函数是反映输入变量和输出变量之间关系的逻辑关系表达式</p>
+<div class="arithmatex">\[F(X_1, X_2, ... , X_n)\]</div>
 </blockquote>
-<ul>
-<li><strong>negation</strong> : <span class="arithmatex">\(\lnot p\)</span> , is the statement <code>It is not the case that p.</code></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>It also denoted by <span class="arithmatex">\(\bar{p}\)</span>, <span class="arithmatex">\(\sim p\)</span> , <span class="arithmatex">\(p'\)</span> , <span class="arithmatex">\(Np\)</span> , <span class="arithmatex">\(!p\)</span> .</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">negation example 1</label><label for="__tabbed_1_2">negation example 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Find the <strong>negation</strong> of the proposition <code>Michael's PC runs Linux.</code></p>
-<details class="example">
-<summary>Solution</summary>
-<p><code>It is not the case that Michael's PC tuns Linux.</code></p>
-<p><code>Michael's PC does not run Linux.</code></p>
-</details>
-</div>
-<div class="tabbed-block">
-<p>Find the <strong>negation</strong> of the proposition <code>Vandana's smartphone has at least 32 GB of memory.</code></p>
-<details class="example">
-<summary>Solution</summary>
-<p><code>It is not the case that Vandana's smartphone has at least 32 GB of memory.</code></p>
-<p><code>Vandana's smartphone does not have at least 32 GB of memory.</code></p>
-<p><code>Vandana's smartphone has less than 32 GB of memory.</code></p>
-</details>
-</div>
-</div>
-</div>
+<ul>
+<li>时序电路有存储功能，输出由当前状态和输入决定</li>
+<li>组合电路只要输入去确定，输出便确定</li>
+</ul>
 </div>
 <ul>
-<li><strong>conjunction</strong> : <span class="arithmatex">\(p \land q\)</span> , the proposition <code>p and q</code>.</li>
+<li><strong>representations of logic functions</strong> : truth table, waveforms...</li>
 </ul>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Find the <strong>conjunction</strong> of the propositions <code>Rebecca's PC has more than 16 GB free hard disk space.</code> and <code>The processor in Rebecca's PC runs faster than 1GHz.</code></p>
-<details class="example">
-<summary>Solution</summary>
-<p><code>Rebecca's PC has more than 16 GB free hard disk space, and the processor in Rebecca's PC runs faster than 1GHz.</code></p>
-<p><code>Rebecca's PC has more than 16 GB free hard disk space, and its processor runs faster than 1GHz.</code></p>
-</details>
-</div>
-<ul>
-<li><strong>disjunction</strong> : <span class="arithmatex">\(p \lor q\)</span>  , the proposition <code>p or q</code> (<strong>inclusive or</strong>).</li>
-</ul>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">disjunction example 1</label><label for="__tabbed_2_2">disjunction example 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Translate the statement <code>Students who have taken calculus or introductory computer science can take this class</code> in a statement in propositional logic using <span class="arithmatex">\(p\)</span> : <code>A student who has taken calculus can take this class</code> and <span class="arithmatex">\(q\)</span> : <code>A student who has taken introductory computer science can take this class</code>.</p>
-<details class="example">
-<summary>Solution</summary>
-<p><span class="arithmatex">\(p \lor q\)</span>  or <code>disjunction of p and q</code></p>
-</details>
-</div>
-<div class="tabbed-block">
-<p>What's the <strong>disjunction</strong> of the propositions in conjunction's example?</p>
-<details class="example">
-<summary>Solution</summary>
-<p><code>Rebecca's PC has more than 16 GB free hard disk space, or the processor in Rebecca's PC runs faster than 1GHz.</code></p>
-</details>
-</div>
-</div>
-</div>
-</div>
-<ul>
-<li><strong>exclusive or</strong> : <span class="arithmatex">\(p \oplus q\)</span> </li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It also denoted by <span class="arithmatex">\(p\)</span> <span class="arithmatex">\(XOR\)</span> <span class="arithmatex">\(q\)</span>.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">exclusive or example 1</label><label for="__tabbed_3_2">exclusive or example 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>What is the <strong>exclusive or</strong> of <code>A student can have a salad with dinner.</code> and <code>A student can have soup with dinner.</code>?</p>
-<details class="example">
-<summary>Solution</summary>
-<p><code>A student can have soup or salad, but not both, with dinner.</code></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Note that this is often stated as <code>A student can have soup or salad with dinner</code> without explicitly stating that taking both is not permitted.</p>
+<p>Unlike truth tables, expressions representing a Boolean function are <strong>NOT</strong> unique.</p>
+<p>e.g., </p>
+<div class="arithmatex">\[F(x,y,z)=\bar x\bar y\bar z+\bar xy\bar z+xy\bar z\]</div>
+<div class="arithmatex">\[G(x,y,z)=\bar x\bar y\bar z+y\bar z\]</div>
+<p>they are identical.</p>
 </div>
-</details>
-</div>
-<div class="tabbed-block">
-<p>Express the statement <code>I will use all my savings to travel to Europe or tu buy an electric car.</code> in propositional logic using the statement <span class="arithmatex">\(p\)</span> : <code>I will use all my savings to travel to Europe.</code> and the statement <span class="arithmatex">\(q\)</span> : <code>I will use all my savings to buy an electric car.</code></p>
-<details class="example">
-<summary>Solution</summary>
-<p>Student cannot both go to Europe and buy an electric car. Hence this can be expressed as</p>
-<div class="arithmatex">\[p \oplus q\]</div>
-</details>
-</div>
-</div>
-</div>
-</div>
-<h2 id="applications-of-propositional-logic">Applications of Propositional Logic 命题逻辑的应用<a class="headerlink" href="#applications-of-propositional-logic" title="Permanent link">&para;</a></h2>
-<h3 id="translating-english-sentences-into-logical-expressions">Translating English Sentences into logical expressions<a class="headerlink" href="#translating-english-sentences-into-logical-expressions" title="Permanent link">&para;</a></h3>
-<h3 id="system-specifications">System Specifications<a class="headerlink" href="#system-specifications" title="Permanent link">&para;</a></h3>
-<p><strong>Systems specifications</strong> should be <strong>consistent</strong>, that is if it is possible to assign truth values to the proposition variables so that each proposition is true.</p>
+<ul>
+<li><strong>Complement of a Function</strong> （ <span class="arithmatex">\(F'\)</span> ）: The complement of a function id derived by interchanging ( <span class="arithmatex">\(\cdot\)</span> and <span class="arithmatex">\(+\)</span> ) , and (1 and 0) , <strong>complementing each variable</strong>. (So it <strong>IS NOT THE SAME as the dual of a function</strong>)</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>Are there specifications consistent?
-<code>The diagnostic message is stored in the buffer or it is retransmitted</code>
-<code>The diagnostic message is not stored in the buffer</code>
-<code>If the diagnostic message is stored in the buffer, then it is retransmitted</code></p>
+<p>Find the complement of</p>
+<div class="arithmatex">\[F(x,y,z)=x\bar y\bar z+\bar xyz\]</div>
 <details class="example">
 <summary>Solution</summary>
-<p>Let <span class="arithmatex">\(p\)</span> denote <code>The diagnostic message is stored in the buffer.</code> and <span class="arithmatex">\(q\)</span> denote <code>The diagnostic message is retransmitted</code>. The specifications can be written as</p>
-<div class="arithmatex">\[p \lor q, \lnot p, p \to q\]</div>
-<p>they are all true if and only if <span class="arithmatex">\(p\)</span> is false and <span class="arithmatex">\(q\)</span> is true.</p>
-</details>
-<p>What if <code>The diagnostic message is not retransmitted</code> is added?</p>
-<details class="example">
-<summary>Solution</summary>
-<p>new specification is</p>
-<div class="arithmatex">\[\lnot q\]</div>
-<p>which is false when <span class="arithmatex">\(q\)</span> is true. Consequently, they are <strong>inconsistent</strong>.</p>
+<div class="arithmatex">\[\begin{aligned}F' &amp; = (x\bar y\bar z+\bar xyz)' \\ &amp; = \overline{x\bar y\bar z} \cdot \overline{\bar xyz} \qquad \text{ (DeMorgam)} \\ &amp; = (\bar x+y+z) \cdot (x+\bar y+\bar z) \qquad \text{ (DeMorgam again)} \end{aligned}\]</div>
 </details>
 </div>
-<h3 id="boolean-searched">boolean searched<a class="headerlink" href="#boolean-searched" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>若 <span class="arithmatex">\(A = B\)</span> ， 则 <span class="arithmatex">\(A' = B'\)</span> </li>
+<li>反函数的输出与原函数相反</li>
+</ul>
+</div>
+<ul>
+<li>
+<p><strong>Canonical and Standard Forms</strong> :</p>
+<ul>
+<li>
+<p><strong>Literal</strong> : A variable or its complement</p>
+</li>
+<li>
+<p><strong>Product term</strong> : literals connected by <span class="arithmatex">\(\cdot\)</span></p>
+</li>
+<li>
+<p><strong>Sum term</strong> : literals connected by <span class="arithmatex">\(+\)</span></p>
+</li>
+<li>
+<p><strong>Minterm</strong> : a product term in which all the variables appear exactly once, either complemented or not. (denoted by <span class="arithmatex">\(m_j\)</span> )</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Assume 3 variables ( <span class="arithmatex">\(X\)</span> , <span class="arithmatex">\(Y\)</span> , <span class="arithmatex">\(Z\)</span> ) , and <span class="arithmatex">\(j = 3\)</span> . Then <span class="arithmatex">\(b_j=011\)</span> and its corresponding minterm is denoted by <span class="arithmatex">\(m_j=\bar XYZ\)</span></p>
+</div>
+</li>
+<li>
+<p><strong>Maxterm</strong> : a sum term in which all the variables appear exactly once, either complemented or not. (denoted by <span class="arithmatex">\(m_j\)</span> )</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Assume 3 variables ( <span class="arithmatex">\(X\)</span> , <span class="arithmatex">\(Y\)</span> , <span class="arithmatex">\(Z\)</span> ) , and <span class="arithmatex">\(j = 3\)</span> . Then <span class="arithmatex">\(b_j=011\)</span> and its corresponding minterm is denoted by <span class="arithmatex">\(m_j= X+\bar Y+\bar Z\)</span></p>
+</div>
+</li>
+<li>
+<p><strong>Canonical forms</strong> : </p>
+<ul>
+<li>
+<p><strong>Canonical Sum-Of-Products (SOP)</strong> : sum of minterms</p>
+</li>
+<li>
+<p><strong>Canonical Product-Of-Sum (POS)</strong> : product of maxterms</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>多级电路成本会降低，但性能会变差</p>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Standard Forms</strong> : similar as canonical forms, except that not all variables need appear in the individual product ( SOP ) or sum ( POS ) terms.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <ul>
-<li><strong>Web Page Serching</strong> : For instance, using Boolean searching to find Web pages about universities in New Mexico, we can look for pages matching <code>NEW AND MEXICO AND UNIVERSITIES</code>.</li>
+<li><span class="arithmatex">\(f1(x,y,z) = \bar x\bar yz+y\bar z+x\bar z\)</span> is a standard SOP form</li>
+<li><span class="arithmatex">\(f1(x,y,z) = (x+y+z)\cdot(\bar y+\bar z)\cdot(\bar x+\bar z)\)</span> is a standard POS form</li>
 </ul>
 </div>
-<h3 id="logic-puzzles">logic puzzles<a class="headerlink" href="#logic-puzzles" title="Permanent link">&para;</a></h3>
+</li>
+</ul>
+</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">logic puzzles example 1</label><label for="__tabbed_4_2">logic puzzles example 2</label></div>
+<p>calculate canonical SOP and POS of</p>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>y</th>
+<th>z</th>
+<th>f</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Solution</summary>
+<p>SOP is</p>
+<div class="arithmatex">\[\begin{aligned} f(x,y,z) &amp; =m_1+m_2+m_4+m_6 \\ &amp; = \bar x\bar yz+\bar xy\bar z+x\bar y\bar z+xy\bar z\end{aligned}\]</div>
+<p>POS is</p>
+<div class="arithmatex">\[\begin{aligned} f(x,y,z) &amp; =M_0\cdot M_3\cdot M_5\cdot M_7 \\ &amp; = (x+y+z)\cdot (x+\bar y+\bar z)\cdot (\bar  x+y + \bar z)\cdot (\bar x+\bar y+\bar z)\end{aligned}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Observe that <span class="arithmatex">\(m_j = M_j'\)</span></li>
+<li>Shorthand : <span class="arithmatex">\(f(x,y,z) = \sum m(1,2,4,6) = \prod M(0,3,5,7)\)</span></li>
+</ul>
+</div>
+</details>
+</div>
+<h2 id="simplification-of-logic-functions">Simplification of Logic Functions<a class="headerlink" href="#simplification-of-logic-functions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Literal Cost</strong> : The number of literal appearances in a Boolean expression corresponding to the logic circuit diagram. ( <span class="arithmatex">\(L\)</span> )</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="arithmatex">\[F_1 = BD+A\bar BC+A\bar C\bar D\]</div>
+<div class="arithmatex">\[F_2 = BD+A\bar BC+A\bar C\bar D+AB\bar C\]</div>
+<div class="arithmatex">\[F_3=(A+B)(A+D)(B+C+\bar D)(\bar B + \bar C + D)\]</div>
+<p>which solution is best?</p>
+<details class="example">
+<summary>Solution</summary>
+<div class="arithmatex">\[L_1 = 8\]</div>
+<div class="arithmatex">\[L_2 = 11\]</div>
+<div class="arithmatex">\[L_3 = 10\]</div>
+<p>so choose <span class="arithmatex">\(F_1\)</span></p>
+</details>
+</div>
+<ul>
+<li><strong>Gate Input Cost</strong> : The number of inputs to the gates in the implementation corresponding exactly to the given equation or equations. ( <span class="arithmatex">\(G\)</span> - inverters not counted, <span class="arithmatex">\(GN\)</span> - inverters counted)</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">gate cost example 1</label><label for="__tabbed_2_2">gate cost example 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>There is an island that has two kinds of inhabitants, knights, who always tell the truth, and their opposites, knaves, who always lie.</p>
-<p><span class="arithmatex">\(A\)</span> say <code>B is a knight.</code></p>
-<p><span class="arithmatex">\(B\)</span> say <code>we are opposite types.</code></p>
-<p>What are <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> ?</p>
+<div class="arithmatex">\[F_1 = BD+A\bar BC+A\bar C\bar D\]</div>
+<div class="arithmatex">\[F_2 = BD+A\bar BC+A\bar C\bar D+AB\bar C\]</div>
+<div class="arithmatex">\[F_3=(A+B)(A+D)(B+C+\bar D)(\bar B + \bar C + D)\]</div>
+<p>which solution is best?</p>
 <details class="example">
 <summary>Solution</summary>
-<p>Let <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> be the statements that <code>A is a knight</code> and <code>B is a knight</code></p>
-<ul>
-<li>if <span class="arithmatex">\(p\)</span> is true, then <span class="arithmatex">\(q\)</span> is true, then <span class="arithmatex">\((p \land q) \lor (\lnot p \land q)\)</span> is true, which is not.</li>
-<li>if <span class="arithmatex">\(p\)</span> is false, then <span class="arithmatex">\(q\)</span> is false, then <span class="arithmatex">\((p \land q) \lor (\lnot p \land q)\)</span> is false.</li>
-</ul>
-<p>So we can conclude that both <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> are knaves.</p>
+<div class="arithmatex">\[L_1 = 8,G_1=11,GN_1=14\]</div>
+<div class="arithmatex">\[L_2 = 11,G_2=15,GN_2=18\]</div>
+<div class="arithmatex">\[L_3 = 10,G_3=14,GN_3=17\]</div>
+<p>so choose <span class="arithmatex">\(F_1\)</span></p>
 </details>
 </div>
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<p>calculate the cost of</p>
+<div class="arithmatex">\[F=A+BC+\bar B \bar C\]</div>
+<details class="example">
+<summary>Solution</summary>
+<p><img alt="Cost-Example-1" src="Cost-Example-1.png" /></p>
+<div class="arithmatex">\[L=5\]</div>
+<div class="arithmatex">\[G=L+2 = 7\]</div>
+<div class="arithmatex">\[GN = L+2=9\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>单变量并不包含在 <span class="arithmatex">\(G\)</span> 的计算中，因为其在 <span class="arithmatex">\(L\)</span> 中已被计算过</p>
+</div>
+</details>
 </div>
 </div>
-<p>www.why3.org/doc/whyml.html#problem-o-einsteins-problem</p>
 </div>
-<h2 id="inreoduction-to-proofs">Inreoduction to Proofs<a class="headerlink" href="#inreoduction-to-proofs" title="Permanent link">&para;</a></h2>
+</div>
 <ul>
-<li><strong>direct proof</strong> : use rule of inference axioms and logical equivalences to show that <span class="arithmatex">\(q\)</span> must also true.</li>
-<li><strong>proof by contraposition</strong> 反证法 : <span class="arithmatex">\(p \to q \equiv \lnot q \to \lnot p\)</span></li>
-<li><strong>proof by contradiction</strong> 归谬证明法 : <span class="arithmatex">\(\text{T} \to p \equiv \lnot p \to \text{F}\)</span></li>
-<li><span class="arithmatex">\(p \leftrightarrow q \equiv p \to q \land q \to p\)</span></li>
+<li>
+<p><strong>Boolean Function Optimization</strong> :  minimizing the gate input (or literal) cost of a (a set of) Boolean equation(s) reduces circuit cost.</p>
+<ul>
+<li>Treat optimum or near-optimum cost functions for two-level ( SOP and POS ) circuits first.</li>
 </ul>
-<h2 id="proof-methods-and-strategy">Proof Methods and Strategy<a class="headerlink" href="#proof-methods-and-strategy" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>一般化简成 SOP ，更符合思维逻辑。若要求化简成 POS，一般先对偶原式，化成 SOP 再对偶。</p>
+</div>
+</li>
+<li>
+<p><strong>Algebraic Manipulation</strong> :</p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">algebraic manipulation example 1</label><label for="__tabbed_3_2">algebraic manipulation example 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Simplify</p>
+<div class="arithmatex">\[F=\bar xyz+\bar xy\bar z + xz\]</div>
+<details class="example">
+<summary>Solution</summary>
+<div class="arithmatex">\[\begin{aligned} F &amp;= \bar xy(z+\bar z) + xz \\ &amp;= \bar xy+xz\end{aligned}\]</div>
+</details>
+</div>
+<div class="tabbed-block">
+<p>Simplify</p>
+<div class="arithmatex">\[F(A,B,C)=\sum m(1,4,5,6,7)\]</div>
+<details class="example">
+<summary>Solution</summary>
+<p>unfinished</p>
+</details>
+</div>
+</div>
+</div>
+</div>
 <ul>
-<li><strong>proof by cases</strong> : <span class="arithmatex">\((\bigvee_{i=1}^n p_i) \to q \equiv \bigwedge_{i=1}^n p_i \to q\)</span></li>
-<li><strong>similarly</strong> : 同理可得</li>
-<li><strong>without loss of generality（WLOG）</strong>: 不失一般性</li>
-<li><strong>existence proofs</strong></li>
-<li><strong>constructive</strong></li>
-<li><strong>no constructive</strong> : no <span class="arithmatex">\(c\)</span> exists which makes <span class="arithmatex">\(P(c)\)</span> true and derive a contradiction.</li>
-<li><strong>counter examples</strong></li>
-<li><strong>Uniqueness proofs</strong> : existence + uniqueness</li>
-<li><strong>backward reasoning</strong></li>
-<li><strong>universally quantified assertion</strong></li>
+<li>
+<p><strong>Karnaugh Maps ( K-map )</strong> : Matrix with <span class="arithmatex">\(2^n\)</span> cells</p>
+<blockquote>
+<p>Karnaugh Maps are graphical representations of boolean functions.</p>
+<p>One <strong>map cell</strong> corresponds to a row in the truth table</p>
+<p>Also, one map cell corresponds to a minterm or a maxterm in the boolean expression</p>
+<p>Multiple-cell areas of the map correspond to standard terms.</p>
+</blockquote>
+<p><img alt="Karnaugh-Map-Structure" src="Karnaugh-Map-Structure.png" /></p>
+</li>
+</ul>
+<h2 id="additional-gates-and-circuits">Additional Gates and Circuits<a class="headerlink" href="#additional-gates-and-circuits" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Transmission gate</strong> : cost is 1</li>
 </ul>
 
 
@@ -1427,7 +1617,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: 离散数学理论基础">
+          <a href="../computer-system-Lec1/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Lec1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1437,20 +1627,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                离散数学理论基础
+                Lec1
               </div>
             </div>
           </a>
         
         
           
-          <a href="../discrete-mathematics-Ch2/" class="md-footer__link md-footer__link--next" aria-label="下一页: Ch2">
+          <a href="../computer-system-Lec3/" class="md-footer__link md-footer__link--next" aria-label="下一页: Lec3">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Ch2
+                Lec3
               </div>
             </div>
             <div class="md-footer__button md-icon">
