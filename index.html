@@ -50,7 +50,7 @@
     
       <link rel="stylesheet" href="stylesheets/customize.css">
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -69,7 +69,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#huansir" class="md-skip">
           跳转至
         </a>
       
@@ -125,7 +125,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="关闭自动模式"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="关闭自动模式"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="关闭自动模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
@@ -731,7 +731,7 @@
               
   
   <span class="md-ellipsis">
-    线性代数 II（H）
+    线性代数 II (H)
     
   </span>
   
@@ -748,7 +748,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            线性代数 II（H）
+            线性代数 II (H)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -888,7 +888,540 @@
 
 
 
-<h1 id="_1">施工中<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="huansir">欢迎来到 huansir 的个人网站<a class="headerlink" href="#huansir" title="Permanent link">&para;</a></h1>
+<div>
+    <style>
+        .card {
+        max-width: 340px;
+        margin: auto;
+        overflow-y: auto;
+        position: relative;
+        z-index: 1;
+        overflow-x: hidden;
+        /* background-color: rgb(255, 255, 255); */
+        display: flex;
+        transition: 0.3s;
+        flex-direction: column;
+        /* border-radius: 10px;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2); */
+        }
+        .card[data-state="#about"] {
+            height: 450px;
+            .card-main {
+                padding-top: 0;
+            }
+        }
+        .card[data-state="#contact"] {
+            height: 430px;
+        }
+        .card[data-state="#experience"] {
+            height: 550px;
+        }
+        .card.is-active {
+            .card-header {
+                height: 80px;
+            }
+            .card-cover {
+                height: 100px;
+                top: -50px;
+            }
+            .card-avatar {
+                transform: none;
+                left: 20px;
+                width: 50px;
+                height: 50px;
+                bottom: 10px;
+            }
+            .card-fullname,
+            .card-jobtitle {
+                left: 86px;
+                transform: none;
+            }
+            .card-fullname {
+                bottom: 18px;
+                font-size: 19px;
+            }
+            .card-jobtitle {
+                bottom: 16px;
+                letter-spacing: 1px;
+                font-size: 10px;
+            }
+        }
+        .card-header {
+            position: relative;
+            display: flex;
+            height: 200px;
+            flex-shrink: 0;
+            width: 100%;
+            transition: 0.3s;
+            * {
+                transition: 0.3s;
+            }
+        }
+        .card-cover {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            height: 160px;
+            top: -20%;
+            left: 0;
+            will-change: top;
+            background-size: cover;
+            background-position: center;
+            filter: blur(30px);
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+        .card-avatar {
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            object-position: center;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-64px);
+        }
+        .card-fullname {
+            position: absolute;
+            bottom: 0;
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+            transform: translateY(-10px) translateX(-50%);
+            left: 50%;
+        }
+        .card-jobtitle {
+            position: absolute;
+            bottom: 0;
+            font-size: 11px;
+            white-space: nowrap;
+            font-weight: 500;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(7px);
+        }
+        .card-main {
+            position: relative;
+            flex: 1;
+            display: flex;
+            padding-top: 10px;
+            flex-direction: column;
+        }
+        .card-subtitle {
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-desc {
+            line-height: 1.6;
+            color: #636b6f;
+            font-size: 14px;
+            margin: 0;
+            font-weight: 400;
+            font-family: "DM Sans", sans-serif;
+        }
+        .card-social {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 30px;
+            svg {
+                fill: rgb(165, 181, 206);
+                width: 16px;
+                display: block;
+                transition: 0.3s;
+            }
+            a {
+                color: #8797a1;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s;
+                background-color: rgba(93, 133, 193, 0.05);
+                border-radius: 50%;
+                margin-right: 10px;
+                &:hover {
+                    svg {
+                        fill: darken(rgb(165, 181, 206), 20%);
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .card-buttons {
+            display: flex;
+            background-color: #fff;
+            margin-top: auto;
+            position: sticky;
+            bottom: 0;
+            left: 0;
+        button {
+            flex: 1 1 auto;
+            user-select: none;
+            background: 0;
+            font-size: 13px;
+            border: 0;
+            padding: 15px 5px;
+            cursor: pointer;
+            color: #5c5c6d;
+            transition: 0.3s;
+            font-family: "Jost", sans-serif;
+            font-weight: 500;
+            outline: 0;
+            border-bottom: 3px solid transparent;
+            &.is-active,
+            &:hover {
+                color: #2b2c48;
+                border-bottom: 3px solid #8a84ff;
+                background: linear-gradient(
+                    to bottom,
+                    rgba(127, 199, 231, 0) 0%,
+                    rgba(207, 204, 255, 0.2) 44%,
+                    rgba(211, 226, 255, 0.4) 100%
+                );
+            }
+        }
+        }
+        .card-section {
+            display: none;
+            &.is-active {
+                display: block;
+                animation: fadeIn 0.6s both;
+            }
+        }
+        @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translatey(40px);
+                }
+                100% {
+                    opacity: 1;
+                }
+        }
+        .card-timeline {
+            margin-top: 30px;
+            position: relative;
+            &:after {
+                background: linear-gradient(
+                    to top,
+                    rgba(134, 214, 243, 0) 0%,
+                    rgba(81, 106, 204, 1) 100%
+                );
+                content: "";
+                left: 42px;
+                width: 2px;
+                top: 0;
+                height: 100%;
+                position: absolute;
+                content: "";
+            }
+        }
+        .card-item {
+            position: relative;
+            padding-left: 60px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            z-index: 1;
+            &:last-child {
+                padding-bottom: 5px;
+            }
+            &:after {
+                content: attr(data-year);
+                width: 10px;
+                position: absolute;
+                top: 0;
+                left: 37px;
+                width: 8px;
+                height: 8px;
+                line-height: 0.6;
+                border: 2px solid #fff;
+                font-size: 11px;
+                text-indent: -35px;
+                border-radius: 50%;
+                color: rgba(#868686, 0.7);
+                background: linear-gradient(
+                to bottom,
+                lighten(#516acc, 20%) 0%,
+                #516acc 100%
+                );
+            }
+        }
+        .card-item-title {
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .card-item-desc {
+            font-size: 13px;
+            color: #6f6f7b;
+            line-height: 1.5;
+            font-family: "DM Sans", sans-serif;
+        }
+        .card-contact-wrapper {
+            margin-top: 20px;
+        }
+        .card-contact {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #6f6f7b;
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.6;
+            cursor: pointer;
+            & + & {
+                margin-top: 16px;
+            }
+            svg {
+                flex-shrink: 0;
+                width: 30px;
+                min-height: 34px;
+                margin-right: 12px;
+                transition: 0.3s;
+                padding-right: 12px;
+                border-right: 1px solid #dfe2ec;
+            }
+        }
+        .contact-me {
+            border: 0;
+            outline: none;
+            background: linear-gradient(
+                to right,
+                rgba(83, 200, 239, 0.8) 0%,
+                rgba(81, 106, 204, 0.8) 96%
+            );
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            color: #fff;
+            padding: 12px 16px;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Jost", sans-serif;
+            transition: 0.3s;
+        }
+    </style>
+    <div class="card" data-state="#about">
+        <div class="card-header">
+            <div class="card-cover" style="background-image: url('https://www.helloimg.com/i/2025/03/13/67d26a8e18380.jpg')"></div>
+            <img class="card-avatar" src="https://www.helloimg.com/i/2025/03/13/67d26a8e18380.jpg" alt="avatar" />
+            <h4 class="card-fullname">Huansir</h4>
+            <h6 class="card-jobtitle">浙江大学大一本科生</h6>
+        </div>
+        <div class="card-main">
+            <div class="card-section is-active" id="about">
+                <div class="card-content">
+                    <div class="card-subtitle">ABOUT</div>
+                    <p class="card-desc">男，ACMer，浙江大学图灵班在读。欢迎各位加qq交流：2122133361
+                    </p>
+                </div>
+            </div>
+            <div class="card-section" id="experience">
+            <div class="card-content">
+                <div class="card-subtitle">个人经历</div>
+                <div class="card-timeline">
+                    <div class="card-item" data-year="2021">
+                        <div class="card-item-title">进入镇海中学进行学习</div>
+                        <div class="card-item-desc">填海</div>
+                    </div>
+                    <div class="card-item" data-year="2024">
+                        <div class="card-item-title">进入浙江大学进行学习，加入校ACM队</div>
+                        <div class="card-item-desc">土木！</div>
+                    </div>
+                    <div class="card-item" data-year="2025">
+                        <div class="card-item-title">转入图灵班</div>
+                        <div class="card-item-desc">土木的尽头</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card-section" id="contact">
+                <div class="card-content">
+                    <div class="card-subtitle">联系方式</div>
+                    <div class="card-contact-wrapper">
+                        <div class="card-contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>qq:2122133361 wechat:huanyxsir</div>
+                        <div class="card-contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <path d="M22 6l-10 7L2 6" /></svg>
+                            2122133361@qq.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-buttons">
+            <button data-section="#about" class="is-active">关于</button>
+            <button data-section="#experience">个人经历</button>
+            <button data-section="#contact">联系方式</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll(".card-buttons button");
+        const sections = document.querySelectorAll(".card-section");
+        const card = document.querySelector(".card");
+        const handleButtonClick = (e) => {
+        const targetSection = e.target.getAttribute("data-section");
+        const section = document.querySelector(targetSection);
+        targetSection !== "#about"
+            ? card.classList.add("is-active")
+            : card.classList.remove("is-active");
+        card.setAttribute("data-state", targetSection);
+        sections.forEach((s) => s.classList.remove("is-active"));
+        buttons.forEach((b) => b.classList.remove("is-active"));
+        e.target.classList.add("is-active");
+        section.classList.add("is-active");
+        };
+        buttons.forEach((btn) => {
+        btn.addEventListener("click", handleButtonClick);
+        });
+    </script>
+</div>
+
+<p></br></p>
+<h1>网站内容</h1>
+
+<div>
+    <style>
+        .container{
+            width: 1000px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .card{
+            position: relative;
+            cursor: pointer;
+        }
+        .container .card .face{
+            width: 300px;
+            height: 200px;
+            transition: 0.5s;
+        }
+        .container .card .face.face1{
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+        .container .card:hover .face.face1{
+            background: #546d78;
+            transform: translateY(0);
+        }
+        .container .card .face.face1 .content{
+            opacity: 0.2;
+            transition: 0.5s;
+        }
+        .container .card:hover .face.face1 .content{
+            opacity: 1;
+        }
+        .container .card .face.face1 .content img{
+            max-width: 100px;
+        }
+        .container .card .face.face1 .content h3{
+            margin: 10px 0 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .container .card .face.face2{
+            position: relative;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-100px);
+        }
+        .container .card:hover .face.face2{
+            transform: translateY(0);
+        }
+        .container .card .face.face2 .content p{
+            margin: 0;
+            padding: 0;
+        }
+        .container .card .face.face2 .content a{
+            margin: 15px 0 0;
+            display:  inline-block;
+            text-decoration: none;
+            font-weight: 900;
+            color: #333;
+            padding: 5px;
+            border: 1px solid #333;
+        }
+        .container .card .face.face2 .content a:hover{
+            background: #333;
+            color: #fff;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <h3>课程笔记</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>记录了博主大学在校期间的课程以及复习笔记</p>
+                            <a href="courses-notes">查看更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <h3>算法竞赛</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>记录了博主的日常训练记录</p>
+                            <a href="algorithm-competition">查看更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <h3>博客</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>记录了博主的随笔以及日常生活</p>
+                            <a href="blog">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</div>
 
 
 
@@ -953,6 +1486,40 @@
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/huanyxsir" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<2122133361@qq.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/204756406" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
     </a>
   
 </div>
