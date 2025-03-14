@@ -42,14 +42,6 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../../../../stylesheets/link.css">
-    
-      <link rel="stylesheet" href="../../../../../stylesheets/customize.css">
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css">
-    
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -511,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../courses-notes/computer-system/computer-system-Lec1/" class="md-nav__link">
+      <a href="../../../../../courses-notes/computer-system/Lec1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -533,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../courses-notes/computer-system/computer-system-Lec2/" class="md-nav__link">
+      <a href="../../../../../courses-notes/computer-system/Lec2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -555,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../courses-notes/computer-system/computer-system-Lec3/" class="md-nav__link">
+      <a href="../../../../../courses-notes/computer-system/Lec3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../courses-notes/discrete-mathematics/discrete-mathematics-Ch1/" class="md-nav__link">
+      <a href="../../../../../courses-notes/discrete-mathematics/Ch1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -664,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../courses-notes/discrete-mathematics/discrete-mathematics-Ch2/" class="md-nav__link">
+      <a href="../../../../../courses-notes/discrete-mathematics/Ch2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,11 +988,11 @@
 <li>b) 将 <span class="arithmatex">\(T'(\varphi_1)\)</span> 和 <span class="arithmatex">\(T'(\varphi_2)\)</span> 写成 <span class="arithmatex">\(\psi_1, \psi_2, \psi_3\)</span> 的线性组合</li>
 </ul>
 </div>
-<p><span class="arithmatex">\(\varphi_1 = e_1' \to \varphi_1(x, y) = x\)</span> . 
-<span class="arithmatex">\(\varphi_2 = e_2' \to \varphi_2(x, y) = y\)</span> . 
-<span class="arithmatex">\(\psi_1 = e_1' \to \psi_1(x, y, z) = x\)</span> . 
-<span class="arithmatex">\(\psi_2 = e_2' \to \psi_1(x, y, z) = y\)</span> . 
-<span class="arithmatex">\(\psi_3 = e_3' \to \psi_1(x, y, z) = z\)</span> . </p>
+<p><span class="arithmatex">\(\varphi_1 = e_1' \to \varphi_1(x, y) = x\)</span> . </p>
+<p><span class="arithmatex">\(\varphi_2 = e_2' \to \varphi_2(x, y) = y\)</span> . </p>
+<p><span class="arithmatex">\(\psi_1 = e_1' \to \psi_1(x, y, z) = x\)</span> . </p>
+<p><span class="arithmatex">\(\psi_2 = e_2' \to \psi_1(x, y, z) = y\)</span> . </p>
+<p><span class="arithmatex">\(\psi_3 = e_3' \to \psi_1(x, y, z) = z\)</span> . </p>
 <p>a)</p>
 <div class="arithmatex">\[\begin{aligned}
 (T'(\varphi_1))(x,y,z) &amp;= \varphi_1 \circ T (x,y,z)
@@ -1029,10 +1021,14 @@
 <p>而根据零化子的定义 </p>
 <div class="arithmatex">\[\begin{aligned}
 &amp;(\mathrm{range} T)^0 = \{\varphi \in (\mathcal{P}_5(\mathbb{R}))' : \forall u \in \mathrm{range} T, \varphi(u) = 0\} \\
-\Rightarrow &amp;\forall \phi \in \mathrm{span}(\varphi), \forall u \in \mathrm{range} T, \varphi(u) = 0\\
-\Rightarrow &amp;\forall u \in \mathrm{range} T, u(8) = 0
+\Rightarrow &amp;(\forall \phi \in \mathrm{span}(\varphi), \forall u \in \mathrm{range} T, \phi(u) = 0) \land (\forall \phi \notin \mathrm{span}(\varphi), \exists u \in \mathrm{range} T, \phi(u) \ne 0)\\
+\Rightarrow &amp;(\forall u \in \mathrm{range} T, u(8) = 0) \land (\forall u \notin \mathrm{range} T, u(8) \ne 0)
 \end{aligned}\]</div>
-<p>即为题目所给证明.</p>
+<p>即为题目所需证明.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="arithmatex">\(\forall \phi \in \mathrm{span}(\varphi), \forall p,\varphi(p)=0 \leftrightarrow \phi(p)=0\)</span></p>
+</div>
 <div class="admonition question">
 <p class="admonition-title">3F.37</p>
 <p>设 <span class="arithmatex">\(U\)</span> 是 <span class="arithmatex">\(V\)</span> 的子空间, <span class="arithmatex">\(\pi : V \to V/U\)</span> 是通常的商映射, 则 <span class="arithmatex">\(\pi' \in \mathcal{L}((V/U)', V')\)</span> .</p>
@@ -1043,10 +1039,11 @@
 </ul>
 </div>
 <p>a)</p>
-<p>先任取 <span class="arithmatex">\(U\)</span> 中的一组基 <span class="arithmatex">\(v_1, ... , v_m\)</span> , 再将其扩展到 <span class="arithmatex">\(V\)</span> 上的基 <span class="arithmatex">\(v_1, ... , v_n\)</span></p>
+<p>由 3.107 , 有 <span class="arithmatex">\(\mathrm{null }\pi' = (\mathrm{range} \pi) ^ 0 = (V/U)^0\)</span> , 而 <span class="arithmatex">\(\dim V/U + \dim (V/U)^0 =\dim V/U\)</span> , 故 <span class="arithmatex">\(\dim (V/U)^0 = \{0\}\)</span> , 即 <span class="arithmatex">\(\mathrm{null }\pi' = \{0\}\)</span> , 即为题目所需证明.</p>
 <p>b) </p>
 <p>由 3.109 , 有 <span class="arithmatex">\(\mathrm{range }\pi' = (\mathrm{null} \pi) ^ 0 = U^0\)</span></p>
 <p>c)</p>
+<p>由 a) 知 <span class="arithmatex">\(\pi'\)</span> 是单的， 由 b) 知 <span class="arithmatex">\(\pi'\)</span> 是满的 .</p>
 
 
 

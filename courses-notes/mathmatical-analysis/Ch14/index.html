@@ -16,7 +16,7 @@
     
     
       
-        <title>computer system Lab2 - Huansir's Web</title>
+        <title>Ch14 - Huansir's Web</title>
       
     
     
@@ -41,14 +41,6 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/link.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/customize.css">
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -105,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              computer system Lab2
+              Ch14
             
           </span>
         </div>
@@ -470,7 +462,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../computer-system/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -502,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../computer-system-Lec1/" class="md-nav__link">
+      <a href="../../computer-system/Lec1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../computer-system-Lec2/" class="md-nav__link">
+      <a href="../../computer-system/Lec2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../computer-system-Lec3/" class="md-nav__link">
+      <a href="../../computer-system/Lec3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -633,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../discrete-mathematics/discrete-mathematics-Ch1/" class="md-nav__link">
+      <a href="../../discrete-mathematics/Ch1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../discrete-mathematics/discrete-mathematics-Ch2/" class="md-nav__link">
+      <a href="../../discrete-mathematics/Ch2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -867,129 +859,9 @@
 
 
 
-  <h1>computer system Lab2</h1>
+  <h1>Ch14</h1>
 
-<hr />
-<p>title: 计算机系统 I - Lab2
-date: 2025-02-28 18:41:00
-categories:
-    - 课程笔记
-    - 计算机系统
-tags:</p>
-<hr />
-<p><strong>half adder 半加器</strong> : 将两个一位二进制数相加，输出和 <span class="arithmatex">\(S\)</span> 与进位 <span class="arithmatex">\(C\)</span></p>
-<p><strong>full adder 全加器</strong> ： 将两个一位二进制数相加，并根据收到的低位进位信号 <span class="arithmatex">\(C_{in}\)</span>，输出和 <span class="arithmatex">\(S\)</span> 与进位 <span class="arithmatex">\(C_{out}\)</span></p>
-<p><span class="arithmatex">\(<span class="arithmatex">\(S=A\oplus B\oplus C\)</span>\)</span>​</p>
-<div class="arithmatex">\[C_{out}=AB+C_{in}\cdot(A\oplus B)\]</div>
-<p>​    </p>
-<p><code>input</code> 与 <code>output</code> 默认是 <code>wire</code> 类型</p>
-<p>主要涉及两个类型 <code>wire</code> 与 <code>register</code></p>
-<p><code>wire</code> ： 根据输入保持高低电位</p>
-<p><code>register</code> ： 可以在不想做修改时保持原有状态</p>
-<p><code>assign</code> ：作赋值</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">AND_GATE</span><span class="w"> </span><span class="p">#(.</span><span class="n">BubblesMask</span><span class="p">(</span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="p">))</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">   </span><span class="n">GATES_1</span><span class="w"> </span><span class="p">(.</span><span class="n">input1</span><span class="p">(</span><span class="n">s_logisimNet2</span><span class="p">),</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">        </span><span class="p">.</span><span class="n">input2</span><span class="p">(</span><span class="n">s_logisimNet0</span><span class="p">),</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">        </span><span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">s_logisimNet6</span><span class="p">));</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">XOR_GATE_ONEHOT</span><span class="w"> </span><span class="p">#(.</span><span class="n">BubblesMask</span><span class="p">(</span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="p">))</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">   </span><span class="n">GATES_2</span><span class="w"> </span><span class="p">(.</span><span class="n">input1</span><span class="p">(</span><span class="n">s_logisimNet2</span><span class="p">),</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="p">.</span><span class="n">input2</span><span class="p">(</span><span class="n">s_logisimNet0</span><span class="p">),</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">        </span><span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">s_logisimNet4</span><span class="p">));</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="n">XOR_GATE_3_INPUTS_ONEHOT</span><span class="w"> </span><span class="p">#(.</span><span class="n">BubblesMask</span><span class="p">(</span><span class="mh">3</span><span class="mb">&#39;b000</span><span class="p">))</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">   </span><span class="n">GATES_3</span><span class="w"> </span><span class="p">(.</span><span class="n">input1</span><span class="p">(</span><span class="n">s_logisimNet2</span><span class="p">),</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">        </span><span class="p">.</span><span class="n">input2</span><span class="p">(</span><span class="n">s_logisimNet0</span><span class="p">),</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">        </span><span class="p">.</span><span class="n">input3</span><span class="p">(</span><span class="n">s_logisimNet5</span><span class="p">),</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">        </span><span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">s_logisimNet1</span><span class="p">));</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="n">AND_GATE</span><span class="w"> </span><span class="p">#(.</span><span class="n">BubblesMask</span><span class="p">(</span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="p">))</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">   </span><span class="n">GATES_4</span><span class="w"> </span><span class="p">(.</span><span class="n">input1</span><span class="p">(</span><span class="n">s_logisimNet4</span><span class="p">),</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">        </span><span class="p">.</span><span class="n">input2</span><span class="p">(</span><span class="n">s_logisimNet5</span><span class="p">),</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">        </span><span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">s_logisimNet3</span><span class="p">));</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="n">OR_GATE</span><span class="w"> </span><span class="p">#(.</span><span class="n">BubblesMask</span><span class="p">(</span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="p">))</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">   </span><span class="n">GATES_5</span><span class="w"> </span><span class="p">(.</span><span class="n">input1</span><span class="p">(</span><span class="n">s_logisimNet6</span><span class="p">),</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">        </span><span class="p">.</span><span class="n">input2</span><span class="p">(</span><span class="n">s_logisimNet3</span><span class="p">),</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">        </span><span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">s_logisimNet7</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<p><code>AND_GATE</code> 实例化模块</p>
-<p><code>GATES_1</code> 实例化名</p>
-<p><code>#(.BubblesMask(2'b00))</code> 参量化，通过<code>#</code>来规定 <code>BubblesMask</code>的值</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">(.</span><span class="n">input1</span><span class="p">(</span><span class="n">s_logisimNet2</span><span class="p">),</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w"> </span><span class="p">.</span><span class="n">input2</span><span class="p">(</span><span class="n">s_logisimNet0</span><span class="p">),</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w"> </span><span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">s_logisimNet6</span><span class="p">))</span>
-</code></pre></div></td></tr></table></div>
-<p>给模块接线</p>
-<p>{% note info %}</p>
-<p><code>BubblesMask</code> 控制位的反转：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">assign</span><span class="w">  </span><span class="n">s_realInput1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">BubblesMask</span><span class="p">[</span><span class="mh">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">input1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">~</span><span class="n">input1</span><span class="p">;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">assign</span><span class="w">  </span><span class="n">s_realInput2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">BubblesMask</span><span class="p">[</span><span class="mh">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">input2</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">~</span><span class="n">input2</span><span class="p">;</span>
-</code></pre></div></td></tr></table></div>
-<p>{% endnote %}</p>
+
 
 
 
