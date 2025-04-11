@@ -919,7 +919,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              需要 4 分钟阅读时间
+                              需要 5 分钟阅读时间
                             
                           </span>
                         </div>
@@ -1054,22 +1054,117 @@ AB\bar C + B\bar C\bar D + BC + \bar CD &amp;= AB\bar C + B\bar C\bar D + BC + \
 <li><strong>3.22</strong> :</li>
 </ul>
 <p>0x0C000000 = 0000 1100 0000 0000 0000 0000 0000 0000
-<strong>IEEE 754</strong> : 1 sign + 8 exponent + 23 fractions</p>
+<strong>IEEE 754 single</strong> : 1 sign + 8 exponent + 23 fractions</p>
 <div class="arithmatex">\[\begin{matrix}\underbrace{0}\\\text{sign }\end{matrix}\begin{matrix}\underbrace{00011000}\\\text{exponent }\end{matrix} \begin{matrix}\underbrace{00000000000000000000000}\\\text{fractions}\end{matrix}\]</div>
 <p><span class="arithmatex">\((-1)^0 \times (1 + \text{0}) \times 2 ^ {\overline{00011000}\text{ - 127}} = 1 \times 2^{-103}\)</span></p>
 <ul>
 <li><strong>3.23</strong> :</li>
 </ul>
 <p><strong>single</strong> : 1 sign + 8 exponent + 23 fractions, bias = 127</p>
-<div class="arithmatex">\[63.25 = (111111.01)_2 = (1.1111101 \times 100000)_2\]</div>
-<p><span class="arithmatex">\(32 + 127 = (10011111)_2\)</span></p>
-<div class="arithmatex">\[\begin{matrix}\underbrace{0}\\\text{sign }\end{matrix}\begin{matrix}\underbrace{10011111}\\\text{exponent }\end{matrix} \begin{matrix}\underbrace{11111010000000000000000}\\\text{fractions}\end{matrix}\]</div>
+<div class="arithmatex">\[63.25 = (111111.01)_2 = 1.1111101 \times 2^{101}\]</div>
+<p><span class="arithmatex">\(5 + 127 = (10000100)_2\)</span></p>
+<div class="arithmatex">\[\begin{matrix}\underbrace{0}\\\text{sign }\end{matrix}\begin{matrix}\underbrace{10000100}\\\text{exponent }\end{matrix} \begin{matrix}\underbrace{11111010000000000000000}\\\text{fractions}\end{matrix}\]</div>
 <ul>
 <li><strong>3.24</strong> :</li>
 </ul>
 <p><strong>double</strong> : 1 sign + 11 exponent + 52 fractions, bias = 1023</p>
-<p><span class="arithmatex">\(32 + 1023 = (10000011111)_2\)</span></p>
-<div class="arithmatex">\[\begin{matrix}\underbrace{0}\\\text{sign }\end{matrix}\begin{matrix}\underbrace{10000011111}\\\text{exponent }\end{matrix} \begin{matrix}\underbrace{1111101000000000000000000000000000000000000000000000}\\\text{fractions}\end{matrix}\]</div>
+<p><span class="arithmatex">\(5 + 1023 = (10000000100)_2\)</span></p>
+<div class="arithmatex">\[\begin{matrix}\underbrace{0}\\\text{sign }\end{matrix}\begin{matrix}\underbrace{10000000100}\\\text{exponent }\end{matrix} \begin{matrix}\underbrace{1111101000000000000000000000000000000000000000000000}\\\text{fractions}\end{matrix}\]</div>
+<ul>
+<li><strong>3.27</strong> :</li>
+</ul>
+<p><strong>half precision</strong> : 1 sign + 5 exponent + 10 fractions, bias = 15</p>
+<p><span class="arithmatex">\(-1.5625\times 10^{-1} = -0.15625 = (-1) \times (0.00101) = (-1) \times (1.01) \times (2^{-11})\)</span></p>
+<p><span class="arithmatex">\(-3 + 15 = (01100)_2\)</span></p>
+<div class="arithmatex">\[\begin{matrix}\underbrace{1}\\\text{sign }\end{matrix}\begin{matrix}\underbrace{01100}\\\text{exponent }\end{matrix} \begin{matrix}\underbrace{0100000000}\\\text{fractions}\end{matrix}\]</div>
+<p>32-bit has larger range and presion than 16-bit.</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><img alt="" src="../../../../sys1-homework/4-8-p.png" /></p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">D(t)</th>
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Y</th>
+<th style="text-align: center;">D(t+1)</th>
+<th style="text-align: center;">S</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph LR
+    0[0] --&gt; |00/0, 11/0| 0[0]
+    0[0] --&gt; |01/1, 10/1| 1[1]
+    1[1] --&gt; |00/1, 11/1| 1[1]
+    1[1] --&gt; |01/0, 10/0| 0[0]</code></pre>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><img alt="" src="../../../../sys1-homework/4-13-p.png" /></p>
+</div>
+<p><img alt="" src="../../../../sys1-homework/4-13.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><img alt="" src="../../../../sys1-homework/4-25-p.png" /></p>
+</div>
 
 
 
