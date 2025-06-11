@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Ch12/">
+        <link rel="prev" href="../Ch18/">
       
       
-        <link rel="next" href="../Ch14/">
+        <link rel="next" href="../Ch20/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Ch13 - Huansir's Web</title>
+        <title>Ch19 - Huansir's Web</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ch13" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ch13
+              Ch19
             
           </span>
         </div>
@@ -886,31 +886,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Ch13
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Ch13/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,44 +899,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 一致收敛性
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 一致收敛函数列与函数项级数的性质
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1077,10 +1018,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Ch19/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ch19
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1090,6 +1052,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 含参量正常积分
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1270,16 +1261,7 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 一致收敛性
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 一致收敛函数列与函数项级数的性质
+      1. 含参量正常积分
     </span>
   </a>
   
@@ -1301,102 +1283,33 @@
 
 
 
-<h1 id="ch13">Ch13 函数列与函数项级数<a class="headerlink" href="#ch13" title="Permanent link">&para;</a></h1>
-<h2 id="1">1. 一致收敛性<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h1 id="_1">含参量积分<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 含参量正常积分<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>函数列</strong>：一列定义在同一数集 <span class="arithmatex">\(E\)</span> 上的函数 <span class="arithmatex">\(f_1, ..., f_n, ...\)</span></li>
+<li>
+<p><strong>含参量积分</strong>： <span class="arithmatex">\(F(x) = \int_{c(x)}^{d(x)} f(x, y)\,dy\)</span></p>
+</li>
+<li>
+<p><strong>含参量积分性质</strong>：</p>
+<ul>
+<li><strong>连续性</strong>：若 <span class="arithmatex">\(f(x, y)\)</span> 在区域 <span class="arithmatex">\(G=\{(x, y)|c(x)\leq y \leq d(x), a\leq x \leq b\}\)</span> 上连续，则函数</li>
 </ul>
-<p>设 <span class="arithmatex">\(x_0 \in E\)</span>，若 <span class="arithmatex">\(\{f_n(x_0)\}\)</span> 收敛，则函数列在 <span class="arithmatex">\(x_0\)</span> <strong>收敛</strong>， <span class="arithmatex">\(x_0\)</span> 为<strong>收敛点</strong>。反之为在点 <span class="arithmatex">\(x_0\)</span> 发散。若 <span class="arithmatex">\(D \subset E\)</span> 上每一点均收敛，则 <span class="arithmatex">\(\{f_n\}\)</span> 在 <span class="arithmatex">\(D\)</span> 上<strong>逐点收敛</strong>。</p>
+<div class="arithmatex">\[F(x)=\int_{c(x)}^{d(x)} f(x, y)\,dy\]</div>
+<p>在 <span class="arithmatex">\([a, b]\)</span> 上连续</p>
+<p>其等价于</p>
+<div class="arithmatex">\[\lim_{x\to x_0}\int_{c(x)}^{d(x)} f(x, y)\,dy=\int_{c(x)}^{d(x)} \lim_{x\to x_0}f(x, y)\,dy\]</div>
 <ul>
-<li><strong>一致收敛</strong>：设函数列 <span class="arithmatex">\(\{f_n\}\)</span> 与函数 <span class="arithmatex">\(f\)</span> 定义在 <span class="arithmatex">\(D\)</span> 上，若 <span class="arithmatex">\(\forall \epsilon &gt; 0, \exists N \in \mathbb{N}, s.t. \forall n &gt; N, \forall x \in D\)</span></li>
+<li><strong>可导性</strong>：若 <span class="arithmatex">\(f(x, y), f_1'(x, y)\)</span> 在 <span class="arithmatex">\(R = [a, b] \times [p, q]\)</span> 上连续， <span class="arithmatex">\(c(x), d(x)\)</span> 为定义在 <span class="arithmatex">\([a, b]\)</span> 上值含于 <span class="arithmatex">\([p, q]\)</span> 内的可微函数，则</li>
 </ul>
-<div class="arithmatex">\[|f_n(x)-f(x)|&lt;\epsilon\]</div>
-<p>则 <span class="arithmatex">\(\{f_n\}\)</span> 在 <span class="arithmatex">\(D\)</span> 上一致收敛于 <span class="arithmatex">\(f_n\)</span>，记作 <span class="arithmatex">\(f_n \rightrightarrows f\)</span></p>
+<div class="arithmatex">\[F(x)=\int_{c(x)}^{d(x)} f(x, y)\,dy\]</div>
+<p>在 <span class="arithmatex">\([a, b]\)</span> 上可导，且</p>
+<div class="arithmatex">\[F'(x)=\int_{c(x)}^{d(x)} f_1'(x, y)\,dy + f(x, d(x))d'(x) - f(x, c(x))c'(x)\]</div>
 <ul>
-<li>
-<p><strong>内闭一致收敛</strong>：所有内部闭区间上一致收敛</p>
-</li>
-<li>
-<p><strong>函数列收敛判定</strong></p>
-<ul>
-<li><strong>柯西准则</strong>：<span class="arithmatex">\(\forall \epsilon &gt; 0, \exists N \in \mathbb{N}, s.t. \forall n, m &gt; N, \forall x \in D\)</span></li>
+<li><strong>可积性</strong>：若 <span class="arithmatex">\(f(x, y), f_1'(x, y)\)</span> 在 <span class="arithmatex">\(R = [a, b] \times [c, d]\)</span> 上连续，则</li>
 </ul>
-<div class="arithmatex">\[|f_n(x)-f_m(x)|&lt;\epsilon\]</div>
-<ul>
-<li>
-<p><span class="arithmatex">\(\lim_{n\to\infty} \sup_{x\in D} |f_n(x)-f(x)| = 0\)</span></p>
-</li>
-<li>
-<p>任意 <span class="arithmatex">\(D\)</span> 上序列 <span class="arithmatex">\(x_n\)</span>，<span class="arithmatex">\(f_n(x_n)-f(x_n)\)</span> 收敛于 0</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>函数项级数</strong>：<span class="arithmatex">\(\sum u_n(x)\)</span>，其中 <span class="arithmatex">\(S_n(x) = \sum u_n(x)\)</span> 为其部分和函数列.</p>
-</li>
-</ul>
-<p>函数项级数的一致收敛即为其部分和函数列的一致收敛</p>
-<ul>
-<li>
-<p><strong>函数项级数一致收敛判别</strong>：</p>
-<ul>
-<li><strong>魏尔斯特拉斯判别法 / M 判别法 / 优级数判别法</strong>：<span class="arithmatex">\(\sum M_n\)</span> 为收敛的正项级数，若 <span class="arithmatex">\(\forall x \in D\)</span></li>
-</ul>
-<div class="arithmatex">\[|u_n(x)|\leq M_n\]</div>
-<p>则 <span class="arithmatex">\(\sum u_n(x)\)</span> 一致收敛</p>
-<ul>
-<li>
-<p><strong>阿贝尔 (Abel) 判别法</strong>：若 <span class="arithmatex">\(u_n(x)\)</span> 单调(对于某个 <span class="arithmatex">\(x_0\)</span>，其形成的数列是单调的)<strong>一致</strong>有界且 <span class="arithmatex">\(\sum v_n(x)\)</span> 一致收敛，则 <span class="arithmatex">\(\sum u_n(x)v_n(x)\)</span> 收敛</p>
-</li>
-<li>
-<p><strong>狄利克雷 (Dirichlet) 判别法</strong>：若 <span class="arithmatex">\(u_n(x)\)</span> 单调趋向 0 且 <span class="arithmatex">\(\sum v_n(x)\)</span> 部分和<strong>一致</strong>有界，则 <span class="arithmatex">\(\sum u_n(x)v_n(x)\)</span> 收敛</p>
-</li>
-</ul>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>函数在闭区间上连续即可推出其在闭区间一致连续</li>
-</ul>
-</div>
-<h2 id="2">2. 一致收敛函数列与函数项级数的性质<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p><strong>函数列的性质</strong></p>
-<ul>
-<li>
-<p>设 <span class="arithmatex">\(\{f_n\}\)</span> 在 <span class="arithmatex">\((a,x_0)\cup(x_0,b)\)</span> 一致收敛于 <span class="arithmatex">\(f\)</span> 且 <span class="arithmatex">\(\lim_{x\to x_0}f_n(x)=a_n\)</span>，则 <span class="arithmatex">\(\lim_{n\to \infty} a_n\)</span> 与 <span class="arithmatex">\(\lim_{x\to x_0} f(x)\)</span> 存在且相等。</p>
-</li>
-<li>
-<p><strong>连续性</strong>：<span class="arithmatex">\(\{f_n\}\)</span> 一致收敛（可弱化至内闭一致收敛）且每项连续 <span class="arithmatex">\(\to\)</span> 极限函数连续</p>
-</li>
-<li>
-<p><strong>可积性</strong>：<span class="arithmatex">\(\{f_n\}\)</span> 一致收敛且可积，则 <span class="arithmatex">\(\lim \int_a^bf_n(x)\,dx = \int_a^b(\lim f_n(x))\,dx\)</span></p>
-</li>
-<li>
-<p><strong>可导性</strong>：<span class="arithmatex">\(\exists x_0,s.t. \{f_n(x_0)\}\)</span>收敛，且导函数连续，导函数列一致收敛。则 <span class="arithmatex">\(\{f_n\}\)</span> 一致收敛于 <span class="arithmatex">\(f\)</span> 且 <span class="arithmatex">\((\lim f_n)' = \lim f_n'\)</span></p>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>
-<p>课本上对于可积性和可导性中连续的假设实际上不是必要的，只是为了更好的证明结论</p>
-</li>
-<li>
-<p>Dini 定理：若函数列 <span class="arithmatex">\(\{f_n(x)\}\)</span> 定义在闭区间 <span class="arithmatex">\(X\)</span> 上且逐项连续，对于 <span class="arithmatex">\(\forall x\in X\)</span> 序列单调，其极限函数 <span class="arithmatex">\(f(x)\)</span> 存在。则 <span class="arithmatex">\(f(x)\)</span> 连续 <span class="arithmatex">\(\leftrightarrow\)</span> <span class="arithmatex">\(\{f_n(x)\}\)</span> 在 <span class="arithmatex">\(X\)</span> 上一致收敛</p>
-</li>
-</ul>
-</div>
-<p><strong>函数项级数的性质</strong></p>
-<ul>
-<li>
-<p><strong>连续性</strong>：<span class="arithmatex">\(u_n(x)\)</span> 每项连续且 <span class="arithmatex">\(\{S_n\}\)</span> 一致收敛 <span class="arithmatex">\(\to\)</span> 和函数连续</p>
-</li>
-<li>
-<p><strong>逐项积分</strong>：<span class="arithmatex">\(u_n(x)\)</span> 每项连续且一致收敛于 <span class="arithmatex">\(S(x)\)</span>，则 <span class="arithmatex">\(\sum\int_a^bu_n(x)\,dx=\int_a^bS(x)\,dx\)</span></p>
-</li>
-<li>
-<p><strong>逐项求导</strong>：<span class="arithmatex">\(u_n\)</span> 每项均有连续导函数，若 <span class="arithmatex">\(\sum u_n(x)\)</span> <strong>逐点收敛</strong>于 <span class="arithmatex">\(S(x)\)</span>，且导函数的级数一致收敛，则 <span class="arithmatex">\(S(x)\)</span> 连续可导且 <span class="arithmatex">\(\sum(\frac{d}{dx}u_n(x)) = \frac{d}{dx}(\sum u_n(x))\)</span></p>
+<div class="arithmatex">\[\varphi(x)=\int_{c}^{d} f(x, y)\,dy\]</div>
+<div class="arithmatex">\[\phi(y)=\int_{a}^{b} f(x, y)\,dx\]</div>
+<p>分别在 <span class="arithmatex">\([a, b], [c, d]\)</span> 上可积，且积分值相等</p>
 </li>
 </ul>
 
@@ -1487,7 +1400,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../Ch12/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Ch12">
+          <a href="../Ch18/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Ch18">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1497,20 +1410,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                Ch12
+                Ch18
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Ch14/" class="md-footer__link md-footer__link--next" aria-label="下一页: Ch14">
+          <a href="../Ch20/" class="md-footer__link md-footer__link--next" aria-label="下一页: Ch20">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Ch14
+                Ch20
               </div>
             </div>
             <div class="md-footer__button md-icon">
