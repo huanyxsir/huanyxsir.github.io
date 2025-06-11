@@ -1329,7 +1329,7 @@
 <p><strong>计算公式</strong></p>
 <div class="arithmatex">\[\begin{aligned}
 \iint_S f(x, y, z) \, dS
-= &amp; \iint_D \mathbf{F}(\mathbf{r}(u, v))(\mathbf{r}_u \times \mathbf{r}_v) \, dudv\\
+= &amp; \iint_D f(\mathbf{r}(u, v))||\mathbf{r}_u \times \mathbf{r}_v|| \, dudv\\
 = &amp; \iint_{D} f(x(u, v), y(u, v), z(u, v))\sqrt{(\frac{\partial(y, z)}{\partial(u, v)})^2 + (\frac{\partial(z, x)}{\partial(u, v)})^2 + (\frac{\partial(x, y)}{\partial(u, v)})^2} dudv\\
 = &amp; \iint_{D}f(x(u, v), y(u, v), z(u, v)) \sqrt{EG-F^2}dudv
 \end{aligned}\]</div>
