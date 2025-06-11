@@ -1326,20 +1326,25 @@
 <p><strong>第一型曲面积分定义</strong>：<span class="arithmatex">\(\lim_{||T||\to 0} \sum f(\xi_i, \eta_i, \zeta_i)\Delta S_i = \iint_S f(x, y, z) \, dS\)</span></p>
 </li>
 <li>
-<p><strong>计算公式</strong>：<span class="arithmatex">\(<span class="arithmatex">\(\begin{aligned}
+<p><strong>计算公式</strong></p>
+</li>
+</ul>
+<div class="arithmatex">\[\begin{aligned}
     \iint_S f(x, y, z) \, dS
     = &amp; \iint_D \mathbf{F}(\mathbf{r}(u, v))(\mathbf{r}_u \times \mathbf{r}_v) \, dudv\\
     = &amp; \iint_{D} f(x(u, v), y(u, v), z(u, v))\sqrt{(\frac{\partial(y, z)}{\partial(u, v)})^2 + (\frac{\partial(z, x)}{\partial(u, v)})^2 + (\frac{\partial(x, y)}{\partial(u, v)})^2} dudv\\
     = &amp; \iint_{D}f(x(u, v), y(u, v), z(u, v)) \sqrt{EG-F^2}dudv
-    \end{aligned}\)</span>\)</span></p>
-<p>其中 </p>
-<div class="arithmatex">\[\begin{aligned}
- &amp; E=x_{u}^{2}+y_{u}^{2}+z_{u}^{2}, \\
- &amp; F=x_{u}x_{v}+y_{u}y_{v}+z_{u}z_{v}, \\
- &amp; G=x_{v}^{2}+y_{v}^{2}+z_{v}^{2}
-\end{aligned}\]</div>
-</li>
-</ul>
+    \end{aligned}\]</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>其中
+
+$$\begin{aligned}
+</code></pre></div></td></tr></table></div>
+<p>&amp; E=x_{u}<sup 2="2">{2}+y_{u}</sup>, \
+ &amp; F=x_{u}x_{v}+y_{u}y_{v}+z_{u}z_{v}, \
+ &amp; G=x_{v}}+z_{u}^{2<sup 2="2">{2}+y_{v}</sup>
+\end{aligned}$$}+z_{v}^{2</p>
 <h2 id="2">2. 第二型曲面积分<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -1362,14 +1367,15 @@
 </ul>
 <h2 id="3">3. 高斯公式与斯托克斯公式<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><strong>高斯 (Gauss) 公式</strong>：设空间区域 <span class="arithmatex">\(V\)</span> 由分片光滑的双侧封闭曲面 <span class="arithmatex">\(S\)</span> 围成.若函数 <span class="arithmatex">\(P,Q,R\)</span> 在 <span class="arithmatex">\(V\)</span> 上连续,且有一阶连续偏导数,则
-<span class="arithmatex">\(<span class="arithmatex">\(\iiint_{V}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right)\,dxdydz=\iint_{S}P\,dydz+Q\,dzdx+R\,dxdy\)</span>\)</span>
+<li><strong>高斯 (Gauss) 公式</strong>：设空间区域 <span class="arithmatex">\(V\)</span> 由分片光滑的双侧封闭曲面 <span class="arithmatex">\(S\)</span> 围成.若函数 <span class="arithmatex">\(P,Q,R\)</span> 在 <span class="arithmatex">\(V\)</span> 上连续,且有一阶连续偏导数,则</li>
+</ul>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\iiint_{V}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right)\,dxdydz=\iint_{S}P\,dydz+Q\,dzdx+R\,dxdy\)</span>\)</span>
 其中 <span class="arithmatex">\(S\)</span> 取外侧</p>
-<p>利用此可以简化第二类曲面积分的计算</p>
-</li>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>利用此可以简化第二类曲面积分的计算
+</code></pre></div></td></tr></table></div>
+<ul>
 <li>
-<p><strong>斯托克斯公式</strong>：<span class="arithmatex">\(<span class="arithmatex">\(\iint\limits_{S}(\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z})\,dydz+(\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x})\,dzdx+(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})\,dxdy=\oint_LP\,dx+Q\,dy+R\,dz,\)</span>\)</span></p>
+<p><strong>斯托克斯公式</strong>：<span class="arithmatex">\(\iint\limits_{S}(\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z})\,dydz+(\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x})\,dzdx+(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})\,dxdy=\oint_LP\,dx+Q\,dy+R\,dz\)</span></p>
 <p>其中 <span class="arithmatex">\(S\)</span> 的侧与 <span class="arithmatex">\(L\)</span> 的方向按右手法则确定</p>
 <p>也可以记作</p>
 <div class="arithmatex">\[\iint_S\begin{vmatrix} dydz &amp; dzdx &amp; dxdy \\ \frac{\partial }{\partial x} &amp; \frac{\partial }{\partial y} &amp; \frac{\partial }{\partial z} \\ P &amp; Q &amp; R \end{vmatrix}\]</div>
